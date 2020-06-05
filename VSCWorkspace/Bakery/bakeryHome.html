@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bakeryStyle.css">
+    <title>Bakery Homepage</title>
+</head>
+<body>
+  <!--Start of the main side menu -->
+      <div id="mainSide" class= "sidenav">
+        <!--What's inside the menu -->
+          <!--Close button -->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <!--We start with the links -->
+          <ul>
+            <li><a class="mainNav" href="#">Quiénes Somos</a></li>
+            <li><a class="mainNav" href="#" onclick="openSubnav()">Catálogo</a>
+              <ul>
+                <li><a id= "catSub" class = "subMenu"  href="#">Tortas</a></li>
+              </ul>
+            </li>
+            <li><a class="mainNav" href="#">Arma Tu Torta</a></li>
+            <li><a class="mainNav" href="#">Combos</a></li>
+            <li><a class="mainNav" href="#">Recetas</a></li>
+            <li><a class="mainNav" href="#">Utilísima</a></li>
+            <li><a class="mainNav" href="#">Cajas</a></li>
+            <li><a class="mainNav" href="#">Delivery</a></li>
+          </ul>
+      </div>
+      <span style="font-size:50px; cursor:pointer" onclick="openNav()">&#9776;</span>
+     
+      <div id ="tipContainer" class = "contact">
+        <h1>Este es el tip de la semana</h1>
+        <h2>Subtítulo</h2>
+        <p>Aquí va el tip.</p>
+
+      </div>
+      <div id = "contactBox">
+        <div id = "instagram" class = "contact">
+          <p>Instagram</p>
+        </div>
+        <div id = "mail" class = "contact">
+          <p>Correo</p>
+        </div>
+    </div>
+
+
+      <script type="text/javascript" src="bakeryJS.js"></script>
+</body>
+</html>
