@@ -17,7 +17,6 @@ body {
   
 }
 
-
 .sidenav a {
   
   padding: 8px 8px 8px 32px;
@@ -54,20 +53,21 @@ li{
   border: solid white;
 }
 
-.sidenav ul ul li{
-
+.sidenav ul ul{
+  visibility: hidden;
+  opacity: 0;
   position: absolute;
   border: solid white;
-  
   transition: 0.5s;
-  width: 50%;
-  right: -50px;
-  
-  
-  
-  
-  
+  right: -225px;  
+  top: 50px 
 }
+
+#sub2{
+  right: -200px;
+  top : 0px;
+}
+
 
 #tipContainer{
   margin-top: 5rem;
@@ -89,16 +89,20 @@ li{
 
 }
 
-.contact{
-  border: solid white;
-}
-
 #instagram{
   margin-right: 20px;
 }
 
-#mail{
+#instaLogo{
+  border-radius: 25%;
+}
+
+#store{
   margin-left: 20px;
+}
+
+#mercadolibre{
+  border-radius: 25%;
 }
 
 @media screen and (max-height: 450px) {
