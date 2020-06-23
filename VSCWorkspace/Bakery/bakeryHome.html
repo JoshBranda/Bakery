@@ -15,9 +15,20 @@
           <!--We start with the links -->
           <ul>
             <li><a class="mainNav" href="#">Quiénes Somos</a></li>
-            <li><a class="mainNav" href="#" onclick="openSubnav()">Catálogo</a>
-              <ul>
-                <li><a id= "catSub" class = "subMenu"  href="#">Tortas</a></li>
+            <li><a id = "catalogue" class="mainNav" href="#" onmouseover="openSubnav(sub1)">Catálogo</a>
+              <ul id = "sub1" class = "subMenu" onmouseleave = "closeSubnav(this)">
+                <li><a id= "catSub" href="#" onmouseover = "openSubnav(sub2)">Tortas</a>
+                    <ul onmouseleave = "closeSubnav(this)" class = "subMenu" id = "sub2">
+                        <li><a href="#">Tradicionales</a></li>
+                        <li><a href="#">Frías</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Pies y Tartaletas</a></li>
+                <li><a href="#">Brazos Gitanos</a></li>
+                <li><a href="#">Panes</a></li>
+                <li><a href="#">Galletas</a></li>
+                <li><a href="#">Pasapalos</a></li>
+                <li><a href="#">Otros</a></li>
               </ul>
             </li>
             <li><a class="mainNav" href="#">Arma Tu Torta</a></li>
@@ -38,10 +49,10 @@
       </div>
       <div id = "contactBox">
         <div id = "instagram" class = "contact">
-          <p>Instagram</p>
+            <a href="https://www.instagram.com/dulcesdecalidad.89/" target="_blank"><img id = "instaLogo" src="LogoIG.jpg" alt="Instagram" width="100" height="100"></a>
         </div>
-        <div id = "mail" class = "contact">
-          <p>Correo</p>
+        <div id = "store" class = "contact">
+          <a href="https://listado.mercadolibre.com.ve/_CustId_44850789" target="_blank"><img id = "mercadolibre" src="mercadolibre.jpg" alt="MercadoLibre" width="100" height="100"></a>
         </div>
     </div>
 
