@@ -1,6 +1,7 @@
 body {
   font-family: "Lato", sans-serif;
   background-image: url("Fondoprincipal.jpg");
+  background-size: cover;
 }
 
 .sidenav {
@@ -42,29 +43,23 @@ body {
 .sidenav ul{
   
   position: relative;
-  border: solid white;
   list-style-type: none;
   margin: 0;
   padding: 0; 
 
 }
 
-li{
-  border: solid white;
-}
-
 .sidenav ul ul{
   visibility: hidden;
   opacity: 0;
   position: absolute;
-  border: solid white;
   transition: 0.5s;
-  right: -225px;  
+  right: -200px;  
   top: 50px 
 }
 
 #sub2{
-  right: -200px;
+  right: -180px;
   top : 0px;
 }
 
@@ -75,7 +70,6 @@ li{
   float: right;
   border: solid white;
   width: 50%;
-
 }
 
 #contactBox{
@@ -85,8 +79,6 @@ li{
   justify-content: center;
   width: 100%;
   bottom: 0;
-  
-
 }
 
 #instagram{
@@ -103,6 +95,32 @@ li{
 
 #mercadolibre{
   border-radius: 25%;
+}
+
+/*Start of the style for Tortas Tradicionales*/
+.cardContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card{
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 80px;
+  grid-template-areas: "image" "info";
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  text-align: center;
+}
+
+.cardImage{
+  grid-area: image;
+}
+
+.cardInfo{
+  grid-area: info;
 }
 
 @media screen and (max-height: 450px) {
